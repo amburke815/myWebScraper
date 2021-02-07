@@ -31,6 +31,6 @@ rows = soup.select('tbody tr') # can just use tbody since there's only one <tbod
 row0 = rows[0]
 
 # gets the text of the news source contained within row 
-name0 = row0.select_one('soure-title').text.strip() # source title is the bottom-level class of the element
+name0 = row0.select_one('source-title').text.strip() # source title is the bottom-level class of the element
 
 print(name)
