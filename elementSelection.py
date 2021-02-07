@@ -33,4 +33,5 @@ row0 = rows[0]
 # gets the text of the news source contained within row 
 name0 = row0.select_one('source-title').text.strip() # source title is the bottom-level class of the element
 
-print(name)
+# TEST: print this source "ABC News (Online)
+print(name0)
