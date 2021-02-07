@@ -28,7 +28,7 @@ from bs4 import BeautifulSoup
 rows = soup.select('tbody tr') # can just use tbody since there's only one <tbody> on this page
 
 # now we can use rows[x] to get the x'th row of rows
-row0 = row[0]
+row0 = rows[0]
 
 # gets the text of the news source contained within row 
 name0 = row0.select_one('soure-title').text.strip() # source title is the bottom-level class of the element
